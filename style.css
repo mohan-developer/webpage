@@ -5,4 +5,4 @@
 .nav-list li {display: inline;}
 .nav-list li a {display: inline-block; margin: 0 20px; font-size: 18px;}
 a { text-decoration: none; color: #fff;}
-.banner-bg {min-height: 600; background-position: center center; background-repeat: no-repeat;background-size: cover;}
+.banner-bg {min-height: 600px; background-position: center center; background-repeat: no-repeat;background-size: cover;}
