@@ -31,10 +31,32 @@
         </div>
     </header>
     <section class="banner">
-
+        <div id="main-slider" class="owl-carousel">
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner1.jpg);"></div>
+            </div>
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner2.jpg);"></div>  
+            </div>
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner3.jpg);"></div> 
+            </div>
+        </div>
     </section>
     <!-- Optional JavaScript -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#main-slider').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:false,
+                autoplay:true,
+                animateOut: 'fadeOut',
+                items:1
+            })
+        });
+    </script>
   </body>
 </html>
