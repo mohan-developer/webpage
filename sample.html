@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Sample page</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="container">
+            <div class="d-flex justify-content-between align-content-center">
+                <div class="logo">
+                    <a href="">Logo</a>
+                </div>
+                <div class="header-menu">
+                   <ul class="nav-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                   </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner">
+        <div id="main-slider" class="owl-carousel">
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner1.jpg);"></div>
+            </div>
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner2.jpg);"></div>  
+            </div>
+            <div class="item">
+                <div class="banner-bg" style="background-image:url(images/banner3.jpg);"></div> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#main-slider').owlCarousel({
+                loop:true,
+                margin:0,
+                nav:false,
+                autoplay:true,
+                animateOut: 'fadeOut',
+                items:1
+            })
+        });
+    </script>
+  </body>
+</html>
+
